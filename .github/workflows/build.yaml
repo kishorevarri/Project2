@@ -20,7 +20,7 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Build Docker image
-        run: docker build -t car_price .
+        run: docker build . --file Dockerfile --tag project2:$(date +%s)
 
       - name: Push Docker image
-        run: docker push car_price
+        run: docker push project2:$(date +%s)
