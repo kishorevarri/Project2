@@ -37,7 +37,7 @@ def read_home():
     """
      Home endpoint which can be used to test the availability of the application.
      """
-    return {'message': 'System is healthy'}
+    return {'message': 'System is working fine'}
 
 # ML API endpoint for making prediction aganist the request received from client
 @app.post("/predict")
